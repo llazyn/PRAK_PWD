@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">N<span>STORE.</span></div>
+        <div class="header-info">Your Everyday Technology Partner</div>
+        <button id="tombolKeranjang">🛒 Keranjang</button>
+    </header>
+
+    <div class="hero">
+        <div>
+            <p class="subtitle">WELCOME TO NSTORE</p>
+            <h1>Upgrade Your<br>Digital Lifestyle.</h1>
+            <p class="hero-desc">
+                Temukan berbagai perangkat teknologi
+                terbaik dengan harga bersahabat.
+            </p>
+            <a href="#produk">Lihat Produk ↓</a>
+        </div>
+        <div class="hero-icon">💻</div>
+    </div>
+
+    <main class="container" id="produk">
+
+        <div class="section-heading">
+            <div>
+                <p class="subtitle">OUR COLLECTION</p>
+                <h2>Produk Pilihan</h2>
+            </div>
+            <p>Temukan teknologi favoritmu.</p>
+        </div>
+        <div class="search-box">
+            <input type="text" id="cari" placeholder="Cari produk di sini...">
+            <button id="tombolCari">Cari</button>
+        </div>
+
+        <div class="produk-list" id="daftarProduk"></div>
+
+        <div class="keranjang" id="panelKeranjang">
+            <h2>🛒 Keranjang Belanja</h2>
+
+            <div id="isiKeranjang">
+                Keranjang belanja masih kosong.
+            </div>
+
+            <div class="total">
+                <p>Jumlah Produk: <span id="jumlahItem">0</span></p>
+                <p>Total Pembayaran: Rp <span id="totalHarga">0</span></p>
+            </div>
+            <div class="aksi">
+                <button class="kosong" id="kosongkan">
+                    Kosongkan Keranjang
+                </button>
+                <button class="checkout" id="checkout">
+                    Checkout →
+                </button>
+            </div>
+        </div>
+        <div id="ringkasan"></div>
+    </main>
+
+    <footer>
+        <h2>N<span>STORE.</span></h2>
+        <p>Belanja teknologi jadi lebih mudah.</p>
+        <small>© 2026 NStore. All Rights Reserved.</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
